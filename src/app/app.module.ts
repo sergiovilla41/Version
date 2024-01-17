@@ -6,17 +6,24 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PadreComponent } from './Component/padre/padre.component';
 import { HijoComponent } from './Component/hijo/hijo.component';
-
+import { Hijo2Component } from './Component/hijo2/hijo2.component';
+import { MatButtonModule } from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
 @NgModule({
   declarations: [
     AppComponent,
     PadreComponent,
-    HijoComponent
+    HijoComponent,
+    Hijo2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatDividerModule,
+     MatIconModule,
   ],
   providers: [
     provideClientHydration()
